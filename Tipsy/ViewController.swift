@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var billTextField: UITextField!
+    
+    @IBOutlet weak var zeroButton: UIButton!
+    @IBOutlet weak var tenButton: UIButton!
+    @IBOutlet weak var twentyButton: UIButton!
+    @IBOutlet weak var splitNumber: UILabel!
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func tipTypeChanged(_ sender: UIButton) {
+        
     }
-
-
+    
+    @IBAction func splitNumberIncreased(_ sender: UIStepper) {
+        
+    }
+    
+    @IBAction func calculatePressed(_ sender: UIButton) {
+        
+    }
 }
 
