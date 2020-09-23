@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     
 
     @IBAction func tipTypeChanged(_ sender: UIButton) {
+        zeroButton.isSelected = false;
+        tenButton.isSelected = false;
+        twentyButton.isSelected = false;
         
+        sender.isSelected = true;
     }
     
     @IBAction func splitNumberIncreased(_ sender: UIStepper) {
