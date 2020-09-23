@@ -13,13 +13,20 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var descriptionText: UILabel!
     
+    var resultValue = "0.0";
+    var numberOfPeople = 2;
+    var tip = 10;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        result.text = resultValue;
+        descriptionText.text = "Split between \(numberOfPeople) people, with \(tip)% tip."
     }
     
     @IBAction func recalculateButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*
